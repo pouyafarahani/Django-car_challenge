@@ -14,7 +14,7 @@ ALLOWED_HOSTS = []
 
 LOCALE_APPS = [
     'apps.car.apps.CarConfig',
-    'accounts.apps.AccountsConfig',
+    'apps.users.apps.UsersConfig',
 ]
 
 
