@@ -13,10 +13,10 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 LOCALE_APPS = [
-    'apps.car.apps.CarConfig',
+    'apps.common.apps.CommonConfig',
     'apps.users.apps.UsersConfig',
+    'apps.car.apps.CarConfig',
 ]
-
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -65,7 +65,6 @@ DATABASES = {
     }
 }
 
-
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -101,3 +100,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# custom user
+AUTH_USER_MODEL = 'users.BaseUser'
